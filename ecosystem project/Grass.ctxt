@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Grass
+comment0.text=\r\n\ A\ simple\ model\ of\ grass.\r\n\ Grass\ -\ each\ unit\ of\ grass\ can\ produce\ a\ new\ unit\ of\ grass\ every\ two\ turns\ \r\n\ (that\ is\ every\ other\ turn)\ -\ \r\n\ \r\n\ it\ reproduces\ in\ its\ own\ square\ or\ in\ an\ adjacent\ square\ \r\n\ (which\ direction\ it\ spreads,\ including\ its\ own\ square,\ is\ random)\r\n\ \r\n\ -\ it\ never\ ages\ -\ it\ only\ dies\ through\ a\ fire\ or\ being\ eaten\ -\ \r\n\ \r\n\ you\ can\ have\ a\ maximum\ of\ ten\ units\ of\ vegetable\ material\ \r\n\ (that\ is,\ grass\ and\ trees\ combined)\ on\ any\ given\ square\ -\r\n\ \r\n\ in\ the\ event\ of\ a\ fire,\ any\ unit\ of\ grass\ has\ a\ 75%\ chance\ of\ dying.\r\n\ \r\n\ @author\ Spring\ Java\ 2024\ Class\ Project\r\n\ @version\ 2024.00\r\n\ Reference\ David\ J.\ Barnes\ and\ Michael\ K\u00F6lling,\ version\ 2016.02.29\r\n
+comment1.params=field\ location
+comment1.target=Grass(Field,\ Location)
+comment1.text=\r\n\ Create\ a\ unit\ of\ grass.\r\n\ @param\ field\ The\ field\ currently\ occupied.\r\n\ @param\ location\ The\ location\ within\ the\ field.\r\n
+comment2.params=newGrass\ currentStep
+comment2.target=void\ exist(java.util.List,\ int)
+comment2.text=\r\n\ Grass\ grows,\ producing\ new\ grass\ every\ two\ turns.\r\n\ @param\ field\ The\ field\ currently\ occupied.\r\n\ @param\ newGrass\ A\ list\ to\ return\ new\ grass.\r\n
+comment3.params=newGrasses
+comment3.target=void\ grow(java.util.List)
+comment3.text=\r\n\ Check\ whether\ or\ not\ this\ grass\ grows\ at\ this\ step.\r\n\ New\ grass\ will\ grow\ into\ free\ adjacent\ locations.\r\n\ @param\ newGrass\ A\ list\ to\ return\ new\ grass\ growth.\r\n
+numComments=4

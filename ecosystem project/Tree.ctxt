@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Tree
+comment0.text=\r\n\ Trees\ -\ each\ tree\ can\ produce\ a\ new\ tree\ every\ five\ turns\r\n\ -\ it\ reproduces\ in\ its\ own\ square\ or\ in\ an\ adjacent\ square\r\n\ -\ it\ never\ ages\ -\ it\ only\ dies\ through\ a\ fire\r\n\ -\ you\ can\ have\ a\ maximum\ of\ ten\ units\ of\ vegetable\ material\ \r\n\ (that\ is,\ grass\ and\ trees\ combined)\ on\ any\ given\ square\r\n\ -\ if\ a\ tree\ wants\ to\ spread\ in\ a\ particular\ direction,\ \r\n\ it\ can\ eliminate\ the\ grass\ that\ is\ in\ that\ square\ if\ necessary\ \r\n\ to\ avoid\ violating\ the\ ten\ vegetable\ unit\ limitation\r\n\ -\ in\ the\ event\ of\ a\ fire,\ any\ unit\ of\ grass\ has\ a\ 60%\ chance\ of\ dying.\r\n\ \r\n\ @author\ Kameliia\ P\ -\ Tree\ behavior\r\n\ @version\ 2024.00\r\n\ Reference\ David\ J.\ Barnes\ and\ Michael\ K\u00F6lling,\ version\ 2016.02.29\r\n
+comment1.params=field\ location
+comment1.target=Tree(Field,\ Location)
+comment1.text=\r\n\ Create\ a\ Tree.\r\n\ @param\ field\ The\ field\ currently\ occupied.\r\n\ @param\ location\ The\ location\ within\ the\ field.\r\n
+comment2.params=newTrees\ currentStep
+comment2.target=void\ exist(java.util.List,\ int)
+comment2.text=\r\n\ Trees\ grow,\ producing\ a\ new\ tree\ every\ five\ turns.\r\n\ @param\ field\ The\ field\ currently\ occupied.\r\n\ @param\ newTrees\ A\ list\ to\ return\ newly\ born\ tree(s).\r\n
+comment3.params=newTrees
+comment3.target=void\ grow(java.util.List)
+comment3.text=\r\n\ Check\ whether\ or\ not\ this\ tree\ will\ reproduce\ at\ this\ step.\r\n\ New\ tree\ will\ grow\ into\ the\ same\ location,\ if\ there\ is\ room,\ or\ into\ a\ random\ adjacent\ location.\r\n\ @param\ newTrees\ A\ list\ to\ return\ new\ tree\ growth.\r\n
+numComments=4

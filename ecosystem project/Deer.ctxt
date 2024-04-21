@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.target=Deer
+comment0.text=\r\n\ Deer\ -\ deer\ can\ reproduce\ once\ every\ four\ turns\ and\ they\ must\ be\ in\ perfect\ health\ \r\n\ (note,\ to\ simplify\ coding,\ we've\ made\ deer\ able\ to\ asexually\ reproduce)\r\n\ -\ deer\ are\ not\ affected\ by\ fire\r\n\ -\ each\ deer\ has\ health\ (up\ to\ a\ maximum\ of\ eight\ points\ -\ the\ deer\ starts\ with\ eight)\ based\ on\ eating;\ \r\n\ each\ turn\ that\ the\ deer\ eats\ (which\ it\ does\ whenever\ it\ can),\ \r\n\ its\ health\ goes\ up\ by\ one\ (until\ the\ maximum);\ \r\n\ if\ the\ deer\ has\ nothing\ to\ eat,\ its\ health\ goes\ down\ to\ eat\ -\ during\ any\ given\ move,\ \r\n\ first\ the\ deer\ should\ eat,\ then\ the\ deer\ may\ move\ \r\n\ (the\ deer\ moves\ to\ whatever\ square\ adjoining\ it\ has\ the\ most\ food,\ \r\n\ unless\ the\ square\ it\ is\ on\ has\ the\ most\ food);\ \r\n\ if\ there\ is\ no\ food\ in\ its\ own\ square\ or\ an\ adjacent\ square,\ the\ deer\ will\ move\ randomly\ -\ \r\n\ deer\ die\ once\ their\ health\ reaches\ zero.\r\n\ \r\n\ @author\ Jon\ Q\ -\ Deer\ behavior\r\n\ @version\ 2024.00\r\n\ Reference\ David\ J.\ Barnes\ and\ Michael\ K\u00F6lling,\ version\ 2016.02.29\r\n
+comment1.params=field\ location
+comment1.target=Deer(Field,\ Location)
+comment1.text=\r\n\ Create\ a\ deer.\r\n\ \r\n\ @param\ field\ The\ field\ currently\ occupied.\r\n\ @param\ location\ The\ location\ within\ the\ field.\r\n
+comment2.params=newDeer\ step
+comment2.target=void\ act(java.util.List,\ int)
+comment2.text=\r\n\ The\ deer\ eats\ to\ survive\ and\ breeds\ once\ every\ four\ turns\r\n\ only\ if\ completely\ healthy.\r\n\ @param\ field\ The\ field\ currently\ occupied.\r\n\ @param\ newDeer\ A\ list\ to\ return\ newly\ born\ deer.\r\n
+comment3.params=
+comment3.target=void\ incrementHealth()
+comment4.params=
+comment4.target=void\ decrementHealth()
+comment4.text=\r\n\ Make\ this\ deer\ lose\ health.\ This\ could\ result\ in\ the\ deer's\ death.\r\n
+comment5.params=locations
+comment5.target=Location\ findFood(java.util.List)
+comment5.text=\r\n\ Look\ for\ plants\ adjacent\ to\ the\ current\ location.\r\n\ Only\ the\ first\ live\ plant\ is\ eaten.\r\n\ @return\ Where\ food\ was\ found,\ or\ null\ if\ it\ wasn't.\r\n
+comment6.params=
+comment6.target=java.util.List\ getAdjacentLocations()
+comment7.params=newDeer
+comment7.target=void\ giveBirth(java.util.List)
+comment7.text=\r\n\ Check\ whether\ or\ not\ this\ Deer\ is\ to\ give\ birth\ at\ this\ step.\r\n\ New\ births\ will\ be\ made\ into\ free\ adjacent\ locations.\r\n\ @param\ newDeer\ A\ list\ to\ return\ newly\ born\ deer.\r\n
+comment8.params=
+comment8.target=int\ breed()
+comment8.text=\r\n\ Generate\ a\ number\ representing\ the\ number\ of\ births\ if\ it\ can\ breed.\r\n\ @return\ The\ number\ of\ births\r\n
+numComments=9
